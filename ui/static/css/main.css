@@ -3,8 +3,8 @@
 
 
 html {
-    background-color: #ffffff;
-    color: #000000;
+    color: #ffffff;
+    background-color: #000000;
     font-family: 'Barlow';
 }
 .container {
@@ -28,7 +28,7 @@ html {
     flex-direction: column;
     height: 200px;
     width: 600px;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     padding: 5px 10px;
     border-radius: 8px;
 }
@@ -60,7 +60,7 @@ footer {
 .button {
     text-decoration: none;
     font-size: 18px;
-    background-color: royalblue;
+    background-color: #13b045;
     color: #ffffff;
     border: 1px solid #ffffff;
     padding: 4px 10px;
@@ -74,6 +74,10 @@ footer {
 
 .text-align-center {
     text-align: center;
+}
+
+.text-green {
+    color: #13b045;
 }
 
 
@@ -119,9 +123,6 @@ footer {
     margin-bottom: 40px;
 }
 
-.mf-80 {
-    margin-left: 80px;
-}
 
 .text-size-16 {
     font-size: 16px;

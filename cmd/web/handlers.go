@@ -14,7 +14,16 @@ func (app *application) home(response http.ResponseWriter, request *http.Request
 		return
 	}
 
-	app.render(response, request, "home.htm", &templateData{})
+	snippets, err := app.dbConn.Latest()
+	if err != nil {
+		app.serverError(response, err)
+	}
+
+	td := &templateData{
+		Snippets: snippets,
+	}
+
+	app.render(response, request, "home.htm", td)
 }
 
 func (app *application) write(response http.ResponseWriter, request *http.Request) {

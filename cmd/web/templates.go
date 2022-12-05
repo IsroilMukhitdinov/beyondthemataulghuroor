@@ -5,11 +5,22 @@ import (
 	"net/http"
 	"path/filepath"
 	"time"
+
+	"beyondthemataulghuroor.com/pkg/models"
 )
+
+func humanDate(t time.Time) string {
+	return t.Format("02 Jan 2006 at 15:04")
+}
+
+var functions = template.FuncMap{
+	"humanDate": humanDate,
+}
 
 type templateData struct {
 	CurrentYear    int
 	CurrentWeekDay string
+	Snippets       []*models.Snippet
 }
 
 func (app *application) addDefaultData(td *templateData, request *http.Request) *templateData {
@@ -48,7 +59,7 @@ func newCache(dir string) (map[string]*template.Template, error) {
 		}
 
 		files = append(files, base...)
-		ts, err := template.ParseFiles(files...)
+		ts, err := template.New(name).Funcs(functions).ParseFiles(files...)
 		if err != nil {
 			return nil, err
 		}
