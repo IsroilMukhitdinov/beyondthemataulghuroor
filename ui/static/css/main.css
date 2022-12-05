@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+
+html {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Barlow';
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navigation-link {
+    margin-right: 80px;
+}
+
+.snippet {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 600px;
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.snippet-metadata {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.snippet-content {
+    height: 70%;
+}
+.snippet-comments {
+    height: 15%;
+}
+.snippet-breakline {
+    border-top: 1px solid #000000;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 18px;
+    background-color: royalblue;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 4px 10px;
+    
+}
+
+
+.text-dec-none {
+    text-decoration: none;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+
+
+.mr-20 {
+    margin-right: 10px;
+}
+
+.mr-80 {
+    margin-right: 80px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mf-80 {
+    margin-left: 80px;
+}
+
+.text-size-16 {
+    font-size: 16px;
+}
+
+.text-size-18 {
+    font-size: 18px;
+}
+.text-size-20 {
+    font-size: 20px;
+}
+
+.text-size-24 {
+    font-size: 24px;
+}
+
+.text-size-28 {
+    font-size: 28px;
+}
+
+.text-size-32 {
+    font-size: 32px;
+}
+
+.text-size-36 {
+    font-size: 36px
+}
